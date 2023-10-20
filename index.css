@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('sources/fonts/unregistered-hype.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=178545), auto;
+    font-family: 'CustomFont', Arial, sans-serif;
+    color: white;
+    background: url('sources/background.jpg') no-repeat center center fixed;
+    background-size: cover;    
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff6666;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 100px; /* Adjust the logo width as needed */
+}
+
+.footer-links a,
+.footer-contact p {
+    margin: 10px 0;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduce el tamaño de fuente para pantallas más pequeñas */
+    }
+
+    .centrado {
+        padding: 20px; /* Añade espacio alrededor del contenido para mejorar la legibilidad */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Coloca los elementos del pie de página en una columna para pantallas más pequeñas */
+        text-align: center; /* Centra el texto en el pie de página */
+    }
+
+    .footer-logo img {
+        margin-bottom: 10px; /* Agrega margen inferior al logo para separarlo de otros elementos */
+    }
+
+    h1 {
+        font-size: 24px; /* Reduce el tamaño del título principal */
+    }
+
+    /* Ajusta el tamaño máximo del GIF */
+    .centrado img {
+        max-width: 100%; /* Establece el ancho máximo al 100% del contenedor */
+        height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    }
+
+    /* Asegúrate de que los saltos de línea se muestren correctamente */
+    .centrado br {
+        display: block; /* Asegura que los saltos de línea sean tratados como bloques y se muestren correctamente */
+        content: ""; /* Evita que los saltos de línea añadan espacio adicional */
+        margin-bottom: 10px; /* Agrega un espacio entre las líneas */
+    }
+}
+
+
+
+
+
+
